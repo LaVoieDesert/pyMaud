@@ -1,0 +1,46 @@
+data_global
+_audit_creation_date 'Mon Oct 12 15:11:53 PDT 1998'
+_audit_creation_method 'Maud, version 1.9992'
+_audit_update_record 'Last update Thu Mar 11 19:31:52 CET 2004'
+_computing_structure_refinement 'Maud, version 1.9992'
+_refine_ls_R_factor_all 0
+_refine_ls_wR_factor_all 0
+_refine_ls_goodness_of_fit_all 1.7103189
+_publ_contact_author_name 'Luca Lutterotti'
+_publ_section_title 'Instrument Broadening determination'
+_pd_proc_ls_extract_int never
+_pd_proc_ls_texture_comp never
+_computing_reduce_memory_occ true
+_pd_proc_ls_theoretical_weight false
+_pd_proc_ls_extract_pos never
+_pd_proc_ls_strain_comp never
+_pd_proc_ls_extract_Fhkl 'end of iteration'
+_pd_proc_ls_Fhkl_comp 'end of iteration'
+_pd_proc_ls_weight_scheme sqrt
+_refine_ls_weighting_scheme WgtSS
+
+#subordinateObject_Marqardt Least Squares
+
+_computing_refinement_algorithm 'Marqardt Least Squares'
+
+_refine_ls_number_iteration 21
+_riet_refine_ls_precision 1.0E-8
+_riet_refine_ls_derivative_step 1.0E-4
+_riet_refine_ls_double_derivative false
+
+#end_subordinateObject_Marqardt Least Squares
+
+
+
+data_Instrument_Philips
+_diffrn_measurement_device Philips
+_riet_caglioti_d_dep true
+_riet_asymmetry_tan_dep true
+_pd_proc_intensity_incident 134.80128(0.27891675) #min 0.0 #max 10000.0
+_riet_par_asymmetry_truncation 0.4 #min -0.44 #max 0.36
+
+loop_
+_riet_par_asymmetry_value
+  122.65204(1.5019644) #min -271.64178 #max 332.00662
+  0.13755496(0.04601902) #min -2.522707 #max 2.064033
+

@@ -1,0 +1,514 @@
+data_global
+_audit_creation_date 'Mon Oct 12 15:11:53 PDT 1998'
+_audit_creation_method 'Maud, version 1.9992'
+_audit_update_record 'Last update Thu Mar 11 19:31:52 CET 2004'
+_computing_structure_refinement 'Maud, version 1.9992'
+_refine_ls_R_factor_all 0
+_refine_ls_wR_factor_all 0
+_refine_ls_goodness_of_fit_all 1.7103189
+_publ_contact_author_name 'Luca Lutterotti'
+_publ_section_title 'Instrument Broadening determination'
+_pd_proc_ls_extract_int never
+_pd_proc_ls_texture_comp never
+_computing_reduce_memory_occ true
+_pd_proc_ls_theoretical_weight false
+_pd_proc_ls_extract_pos never
+_pd_proc_ls_strain_comp never
+_pd_proc_ls_extract_Fhkl 'end of iteration'
+_pd_proc_ls_Fhkl_comp 'end of iteration'
+_pd_proc_ls_weight_scheme sqrt
+_refine_ls_weighting_scheme WgtSS
+
+#subordinateObject_Marqardt Least Squares
+
+_computing_refinement_algorithm 'Marqardt Least Squares'
+
+_refine_ls_number_iteration 21
+_riet_refine_ls_precision 1.0E-8
+_riet_refine_ls_derivative_step 1.0E-4
+_riet_refine_ls_double_derivative false
+
+#end_subordinateObject_Marqardt Least Squares
+
+
+
+data_Instrument_Philips
+_diffrn_measurement_device Philips
+_riet_caglioti_d_dep true
+_riet_asymmetry_tan_dep true
+_pd_proc_intensity_incident 134.80128(0.27891675) #min 0.0 #max 10000.0
+_riet_par_asymmetry_truncation 0.4 #min -0.44 #max 0.36
+
+loop_
+_riet_par_asymmetry_value
+  122.65204(1.5019644) #min -271.64178 #max 332.00662
+  0.13755496(0.04601902) #min -2.522707 #max 2.064033
+
+loop_
+_riet_par_caglioti_value
+  0.007930134(6.701039E-5) #min -0.001244395 #max 0.0015209272
+  0.0013003548(2.8698874E-5) #min -0.024450453 #max 0.029883888
+  0.0044236695(9.656924E-5) #min -0.024450453 #max 0.029883888
+
+loop_
+_riet_par_gaussian_value
+  0.42279258(0.0055617974) #min 0.0 #max 1.0
+  0.0028584453(9.029634E-5) #min -0.108 #max 0.132
+
+loop_
+_riet_par_2-theta_offset
+  0.026513655(8.741168E-5) #min 0.0 #max 0.0
+
+
+#subordinateObject_none cal
+
+_inst_intensity_calibration 'none cal'
+
+
+#end_subordinateObject_none cal
+
+
+#subordinateObject_none
+
+_inst_angular_calibration 'none'
+
+
+#end_subordinateObject_none
+
+
+#subordinateObject_Bragg-Brentano
+
+_pd_instr_geometry 'Bragg-Brentano'
+
+_diffrn_radiation_monochromator Filtered
+_pd_instr_2theta_monochr_post 0
+_pd_instr_dist_src/samp 173.0
+_pd_instr_monochr_pre_spec none
+_pd_instr_2theta_monochr_pre 0
+_pd_instr_divg_ax_src/samp 0.5
+_pd_instr_divg_slit_auto false
+_diffrn_radiation_polarisn_norm 0.0 #min 0.0 #max 360.0
+_diffrn_radiation_polarisn_ratio 0.0 #min 0.0 #max 1.0
+
+#end_subordinateObject_Bragg-Brentano
+
+
+#subordinateObject_Theta-2Theta
+
+_diffrn_measurement_method 'Theta-2Theta'
+
+
+#end_subordinateObject_Theta-2Theta
+
+
+#subordinateObject_X-ray
+
+_diffrn_radiation_type 'X-ray'
+
+
+#subordinateObject_CuKalpha1
+
+_diffrn_radiation_wavelength_id 'CuKalpha1'
+
+_diffrn_radiation_wavelength 1.5405981 #min 0.1 #max 10.0
+_diffrn_radiation_wavelength_wt 1.0 #min 0.0 #max 1.01
+
+#end_subordinateObject_CuKalpha1
+
+
+#subordinateObject_CuKalpha2
+
+_diffrn_radiation_wavelength_id 'CuKalpha2'
+
+_diffrn_radiation_wavelength 1.5444193(3.075221E-6) #min 0.1 #max 10.0
+_diffrn_radiation_wavelength_wt 0.47276577(0.0016883536) #min 0.0 #max 1.01
+
+#end_subordinateObject_CuKalpha2
+
+
+#subordinateObject_Kbeta
+
+_diffrn_radiation_wavelength_id 'Kbeta'
+
+_diffrn_radiation_wavelength 1.392629(2.2822534E-4) #min 0.1 #max 10.0
+_diffrn_radiation_wavelength_wt 0.0015276952(1.2252344E-4) #min 0.0 #max 1.01
+
+#end_subordinateObject_Kbeta
+
+
+#end_subordinateObject_X-ray
+
+
+#subordinateObject_Scintillation
+
+_diffrn_radiation_detector 'Scintillation'
+
+
+#end_subordinateObject_Scintillation
+
+
+#subordinateObject_none abs
+
+_exptl_absorpt_correction_type 'none abs'
+
+
+#end_subordinateObject_none abs
+
+
+
+
+data_dataset_DataFileSet_x
+_pd_meas_dataset_id DataFileSet_x
+_pd_meas_info_author_name ?
+_riet_meas_datafile_format ?
+_pd_proc_ls_background_function ?
+_pd_proc_ls_profile_function ?
+_pd_proc_ls_peak_cutoff 30
+_diffrn_measurement_device Philips
+_pd_proc_2theta_range_min 15
+_pd_proc_2theta_range_max 150
+_pd_proc_2theta_range_inc ?
+_diffrn_ambient_pressure ?
+_diffrn_ambient_temperature ?
+_riet_lorentz_restricted true
+_riet_par_background_interpolated false
+_riet_par_background_interpolation_range 15
+_pd_meas_orientation_omega_offset 0.0 #min 0.0 #max 0.0
+_pd_meas_orientation_chi_offset 0.0 #min 0.0 #max 0.0
+_pd_meas_orientation_phi_offset 0.0 #min 0.0 #max 0.0
+_pd_meas_orientation_eta_offset 0.0 #min 0.0 #max 0.0
+_riet_par_background_exp_shift 0.0 #min 0.0 #max 0.0
+_riet_par_background_exp_thermal_shift 0.0 #min 0.0 #max 0.0
+
+loop_
+_riet_par_background_pol
+  189.13899(3.9805121) #min -90.0 #max 110.0
+  -5.9812894(0.27443722) #min 0.0 #max 0.0
+  0.10587768(0.0061185155) #min 0.0 #max 0.0
+  -7.8062253E-4(5.430013E-5) #min -156.25 #max 156.25
+  2.1089293E-6(1.6559824E-7) #min -80.0 #max 80.0
+
+
+#subordinateObject_Le Bail
+
+_riet_intensity_extraction 'Le Bail'
+
+_riet_lebail_iteration_max 5
+_riet_lebail_error_max 0.0050
+_riet_lebail_range_factor 0.05
+_riet_lebail_use_bkg true
+_riet_lebail_use_hkl false
+_riet_lebail_summation_delta 1.0E-4
+
+#end_subordinateObject_Le Bail
+
+
+#subordinateObject_none pe
+
+_riet_position_extraction 'none pe'
+
+
+#end_subordinateObject_none pe
+
+
+#subordinateObject_none reflectivity
+
+_reflectivity_model_type 'none reflectivity'
+
+
+#end_subordinateObject_none reflectivity
+
+
+#subordinateObject_CPD-Y2O3.PRN
+
+_riet_meas_datafile_name 'CPD-Y2O3.PRN'
+
+_riet_meas_datafile_format ?
+_pd_meas_orientation_omega 0.0
+_pd_meas_orientation_chi 0.0
+_pd_meas_orientation_phi 0.0
+_pd_meas_orientation_eta 0.0
+_riet_meas_datafile_compute true
+_riet_meas_datafile_fitting false
+_pd_meas_detector_id none
+_pd_meas_step_count_time 1.0
+_pd_meas_units_of_intensity counts
+_riet_meas_datafile_as_background false
+_pd_meas_counts_monitor 1.0 #min 0.0 #max 10.0
+
+
+#end_subordinateObject_CPD-Y2O3.PRN
+
+
+
+
+data_phase_Yttrium-Oxide
+_chemical_name_common Yttrium-Oxide
+_chemical_formula_sum Y2O3
+_symmetry_cell_setting cubic
+_symmetry_space_group_name_H-M Ia-3
+_cell_formula_units_Z 1
+_cell_length_a 10.6033125(1.3484144E-5) #min 0.1 #max 100.0
+_riet_par_strain_thermal 0.0 #min -0.1 #max 0.1
+_exptl_absorpt_cryst_size 0 #min 1.0E-4 #max 1000.0
+_riet_par_phase_scale_factor 1.0 #min 0.0 #max 100.0
+
+
+#subordinateObject_none tex
+
+_pd_proc_ls_pref_orient_corr 'none tex'
+
+
+#end_subordinateObject_none tex
+
+
+#subordinateObject_None
+
+_riet_size_strain_model 'None'
+
+
+#end_subordinateObject_None
+
+
+#subordinateObject_Isotropic
+
+_riet_sizestrain_sym_model 'Isotropic'
+
+_riet_par_cryst_size 0 #min 5.0 #max 10000.0
+_riet_par_rs_microstrain 0 #min 0.0 #max 0.01
+
+#end_subordinateObject_Isotropic
+
+
+#subordinateObject_none abm
+
+_riet_antiphase_boundary 'none abm'
+
+
+#end_subordinateObject_none abm
+
+
+#subordinateObject_none pd
+
+_riet_planar_defect 'none pd'
+
+
+#end_subordinateObject_none pd
+
+
+#subordinateObject_no magnetic
+
+_riet_magnetic_structure_model 'no magnetic'
+
+
+#end_subordinateObject_no magnetic
+
+
+#subordinateObject_no strain
+
+_riet_par_strain_model 'no strain'
+
+
+#end_subordinateObject_no strain
+
+
+#subordinateObject_No microabsorption
+
+_riet_micro_absorption_model 'No microabsorption'
+
+
+#end_subordinateObject_No microabsorption
+
+
+#subordinateObject_atomic standard model
+
+_riet_structure_factor_model 'atomic standard model'
+
+
+#end_subordinateObject_atomic standard model
+
+
+#subordinateObject_none sf extractor
+
+_riet_structure_factor_extractor 'none sf extractor'
+
+
+#end_subordinateObject_none sf extractor
+
+
+#subordinateObject_Genetic Algorithm SDPD
+
+_riet_structure_solution_method 'Genetic Algorithm SDPD'
+
+_riet_ga_population_size 500
+_riet_ga_generations_number 20
+_riet_ga_mutation_prob 0.01
+_riet_ga_permutation_prob 0.01
+
+#end_subordinateObject_Genetic Algorithm SDPD
+
+
+#subordinateObject_Atomic Structure
+
+_riet_structure_model 'Atomic Structure'
+
+_riet_structure_quantity_from_occupancy true
+
+#subordinateObject_Genetic Algorithm SDPD
+
+_riet_structure_solution_method 'Genetic Algorithm SDPD'
+
+_riet_ga_population_size 500
+_riet_ga_generations_number 20
+_riet_ga_mutation_prob 0.01
+_riet_ga_permutation_prob 0.01
+
+#end_subordinateObject_Genetic Algorithm SDPD
+
+
+#subordinateObject_No force field
+
+_riet_structure_force_field 'No force field'
+
+
+#end_subordinateObject_No force field
+
+
+#subordinateObject_Y1
+
+_atom_site_label 'Y1'
+
+_atom_site_type_symbol Y3+
+_atom_site_constraints ?
+_atom_type_number_in_cell 8.0
+_atom_site_occupancy 1.0 #min 0.0 #max 1.0
+_atom_site_fract_x 0.25 #min 0.0 #max 1.0
+_atom_site_fract_y 0.25 #min 0.0 #max 1.0
+_atom_site_fract_z 0.25 #min 0.0 #max 1.0
+_atom_site_B_iso_or_equiv 0.2942433(0.006691931) #min -1.0 #max 10.0 #ref0
+_atom_site_aniso_B_11 0.0 #min -1.0 #max 10.0
+_atom_site_aniso_B_22 0.0 #min -1.0 #max 10.0
+_atom_site_aniso_B_33 0.0 #min -1.0 #max 10.0
+_atom_site_aniso_B_23 0.0 #min -1.0 #max 10.0
+_atom_site_aniso_B_13 0.0 #min -1.0 #max 10.0
+_atom_site_aniso_B_12 0.0 #min -1.0 #max 10.0
+
+#end_subordinateObject_Y1
+
+
+#subordinateObject_Y2
+
+_atom_site_label 'Y2'
+
+_atom_site_type_symbol Y3+
+_atom_site_constraints ?
+_atom_type_number_in_cell 24.0
+_atom_site_occupancy 1.0 #min 0.0 #max 1.0
+_atom_site_fract_x 0.46753764(2.5427891E-5) #min 0.0 #max 1.0
+_atom_site_fract_y 0.0 #min 0.0 #max 1.0
+_atom_site_fract_z 0.25 #min 0.0 #max 1.0
+_atom_site_B_iso_or_equiv 0.2942433 #min -1.0 #max 10.0 #equalTo 0 + 1 * #ref0
+_atom_site_aniso_B_11 0.0 #min -1.0 #max 10.0
+_atom_site_aniso_B_22 0.0 #min -1.0 #max 10.0
+_atom_site_aniso_B_33 0.0 #min -1.0 #max 10.0
+_atom_site_aniso_B_23 0.0 #min -1.0 #max 10.0
+_atom_site_aniso_B_13 0.0 #min -1.0 #max 10.0
+_atom_site_aniso_B_12 0.0 #min -1.0 #max 10.0
+
+#end_subordinateObject_Y2
+
+
+#subordinateObject_O1
+
+_atom_site_label 'O1'
+
+_atom_site_type_symbol O2-
+_atom_site_constraints ?
+_atom_type_number_in_cell 48.0
+_atom_site_occupancy 1.0 #min 0.0 #max 1.0
+_atom_site_fract_x 0.1088338(1.782753E-4) #min 0.0 #max 1.0
+_atom_site_fract_y 0.34785765(1.7592081E-4) #min 0.0 #max 1.0
+_atom_site_fract_z 0.11920227(1.9058971E-4) #min 0.0 #max 1.0
+_atom_site_B_iso_or_equiv 0.2942433(0.04194917) #min -1.0 #max 10.0
+_atom_site_aniso_B_11 0.0 #min -1.0 #max 10.0
+_atom_site_aniso_B_22 0.0 #min -1.0 #max 10.0
+_atom_site_aniso_B_33 0.0 #min -1.0 #max 10.0
+_atom_site_aniso_B_23 0.0 #min -1.0 #max 10.0
+_atom_site_aniso_B_13 0.0 #min -1.0 #max 10.0
+_atom_site_aniso_B_12 0.0 #min -1.0 #max 10.0
+
+#end_subordinateObject_O1
+
+
+#end_subordinateObject_Atomic Structure
+
+
+#subordinateObject_None TDS
+
+_riet_tds_model 'None TDS'
+
+
+#end_subordinateObject_None TDS
+
+
+
+
+data_sample_unknown
+_pd_spec_id unknown
+
+loop_
+_pd_meas_dataset_id
+ DataFileSet_x
+
+_pd_spec_orientation_omega 0.0 #min 0.0 #max 0.0
+_pd_spec_orientation_chi 0.0 #min -810.0 #max 990.0
+_pd_spec_orientation_phi 0.0 #min 0.0 #max 0.0
+_riet_par_spec_displac_x 0.0 #min 0.0 #max 0.0
+_riet_par_spec_displac_y 0.0 #min 0.0 #max 0.0
+_riet_par_spec_displac_z 0.0 #min 0.0 #max 0.0
+_pd_spec_size_axial 0.0 #min 0.0 #max 0.0
+_pd_spec_size_equat 0.0 #min 0.0 #max 0.0
+_pd_spec_size_thick 0.0 #min 0.0 #max 0.0
+_pd_spec_size_radius 0.0 #min 0.0 #max 0.0
+
+#subordinateObject_flat_sheet
+
+_pd_spec_shape 'flat_sheet'
+
+
+#end_subordinateObject_flat_sheet
+
+
+#subordinateObject_None Layer workout
+
+_riet_layer_solution_method 'None Layer workout'
+
+
+#end_subordinateObject_None Layer workout
+
+
+#subordinateObject_No precession
+
+_riet_spec_precession_error 'No precession'
+
+
+#end_subordinateObject_No precession
+
+
+#subordinateObject_layer1
+
+_riet_spec_layer_id 'layer1'
+
+_riet_par_spec_layer_thickness 1.0E7 #min 0.1 #max 1.0E8
+_reflectivity_layer_critical_qc 0.04 #min 0.0010 #max 0.5
+_reflectivity_layer_absorption 2.0E-7 #min 1.0E-8 #max 1.0E-5
+_reflectivity_layer_roughness 2.0 #min 0.01 #max 100.0
+
+loop_
+_pd_phase_atom_%
+  1.0 #min 0.0 #max 1.0
+
+
+#end_subordinateObject_layer1
+
+

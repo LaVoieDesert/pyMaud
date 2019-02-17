@@ -1,0 +1,10 @@
+#subordinateObject_Marqardt Least Squares
+
+_computing_refinement_algorithm 'Marqardt Least Squares'
+
+_refine_ls_number_iteration 21
+_riet_refine_ls_precision 1.0E-8
+_riet_refine_ls_derivative_step 1.0E-4
+_riet_refine_ls_double_derivative false
+
+#end_subordinateObject_Marqardt Least Squares
