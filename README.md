@@ -8,7 +8,7 @@ MAUD is an amazing tool to analyse diffraction data (and more), checkout here
  
 but the manipulation off many files simultaneously is quite difficulte. I have seen many different solution from different people. I propose my scripts, under development, to help, as I have not found what I search around.
 
-== Example ==
+## Example
 
     # -*- coding: utf-8 -*-
     #!/usr/bin/env python
