@@ -12,7 +12,7 @@ v_positive = pp.Group(pp.Keyword("#positive").setResultsName('value')).setResult
 v_autotrace = pp.Group(pp.Keyword("#autotrace").setResultsName('value')).setResultsName('v_autotrace')
 v_options = pp.ZeroOrMore(v_autotrace | v_positive | v_min | v_max)
 
-v_words = pp.Group("'" + pp.Combine(pp.OneOrMore(pp.Word(pp.alphanums+" :.,_-/\?!"))).setResultsName('value') + "'").setResultsName('v_words')
+v_words = pp.Group("'" + pp.Combine(pp.OneOrMore(pp.Word(pp.alphanums+" :.,_+-/\()?!@"))).setResultsName('value') + "'").setResultsName('v_words')
 
 v_word = pp.Group(pp.Word(pp.alphanums+"?").setResultsName('value')).setResultsName('v_word')
 
@@ -20,6 +20,10 @@ v_all = v_name + ((v_value + v_options) | v_words | v_word)
 
 def parse_single_maud_value(ligne):
     return v_all.parseString(ligne)
+
+def parse_single_maud_value_nokeyword(ligne):
+    v_all_nokeyword = ((v_value + v_options) | v_words | v_word)
+    return v_all_nokeyword.parseString(ligne)
 
 
 if __name__ == "__main__":
