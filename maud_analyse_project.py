@@ -35,7 +35,9 @@ def maud_get_cellparameters(data, sample_name):
             i += 1
     return cell_parameters
 
-def maud_project_analysis(data):
+def maud_project_analysis(fichier, debug=False):
+    data = maud_parser(fichier, debug)
+    
     print("    --- Maud par file analysis ---")
     print(fichier)
     print("")
@@ -59,5 +61,4 @@ def maud_project_analysis(data):
 if __name__ == "__main__":
 
     fichier = "data/A01_texture.par"
-    data = maud_parser(fichier, debug=False)
-    maud_project_analysis(data)
+    maud_project_analysis(fichier)
