@@ -8,13 +8,15 @@ MAUD is an amazing tool to analyse diffraction data (and more), checkout here
  
 but the manipulation off many files simultaneously is quite difficulte. I have seen many different solution from different people. I propose my scripts, under development, to help, as I have not found what I search around.
 
-## Example
+## Example 01
 
-    # -*- coding: utf-8 -*-
+extract the cell parameters of the different phases
+
+    #coding: utf-8
     #!/usr/bin/env python
 
     from maud_parser2 import maud_parser
-    from maud_parse_value import parse_single_maud_value_nokeyword
+    from maud_parse_value import parse_single_maud_value_nokeyword, get_value
 
 
     fichier = "data/A01_texture.par"
@@ -30,15 +32,43 @@ but the manipulation off many files simultaneously is quite difficulte. I have s
             print("   {:s}{}({:5.2f}%): {},{},{}".format(
                 pname,
                 ' '*(25-len(pname)),
-                float(_compo['v_value']['value'])*100,
-                data['data_sample_Sample_x'][key]["_cell_length_a"]['v_value']['value'],
-                data['data_sample_Sample_x'][key]["_cell_length_b"]['v_value']['value'],
-                data['data_sample_Sample_x'][key]["_cell_length_c"]['v_value']['value'],
+                get_value(_compo)*100,
+                get_value(data['data_sample_Sample_x'][key]["_cell_length_a"]),
+                get_value(data['data_sample_Sample_x'][key]["_cell_length_b"]),
+                get_value(data['data_sample_Sample_x'][key]["_cell_length_c"]),
                 ))
+            i += 1
 
 will give as result
 
     data/A01_texture.par
+        cementite                ( 3.36%): 4.511985,5.065079,6.7294774
+        gamma-Fe                 ( 9.03%): 3.5815272,3.5815272,3.5815272
+        martensite               (87.61%): 2.8529925,2.8529925,2.9219563
+
+## Example 02
+
+quick overview of the project by analysing the 'par' file
+
+    #coding: utf-8
+    #!/usr/bin/env python
+
+    from maud_analyse_project import maud_project_analysis
+
+
+    fichier = "data/A01_texture.par"
+    maud_project_analysis(fichier) 
+
+will give as result
+
+        --- Maud par file analysis ---
+    data/A01_texture.par
+
+    Put a title here
+    Last update Thu Feb 23 17:51:40 CET 2017
+
+    Samples
+    _ data_sample_Sample_x: Sample description
         cementite                ( 3.36%): 4.511985,5.065079,6.7294774
         gamma-Fe                 ( 9.03%): 3.5815272,3.5815272,3.5815272
         martensite               (87.61%): 2.8529925,2.8529925,2.9219563

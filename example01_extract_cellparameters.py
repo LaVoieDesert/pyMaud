@@ -1,4 +1,4 @@
- # -*- coding: utf-8 -*-
+#coding: utf-8
 #!/usr/bin/env python
 
 from maud_parser2 import maud_parser
