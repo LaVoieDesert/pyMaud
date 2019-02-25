@@ -2,7 +2,7 @@
 #!/usr/bin/env python
 
 from maud_parser2 import maud_parser
-from maud_parse_value import parse_single_maud_value_nokeyword
+from maud_parse_value import parse_single_maud_value_nokeyword, get_value
 
 
 fichier = "data/A01_texture.par"
@@ -18,10 +18,10 @@ for key in data['data_sample_Sample_x']:
         print("   {:s}{}({:5.2f}%): {},{},{}".format(
             pname,
             ' '*(25-len(pname)),
-            float(_compo['v_value']['value'])*100,
-            data['data_sample_Sample_x'][key]["_cell_length_a"]['v_value']['value'],
-            data['data_sample_Sample_x'][key]["_cell_length_b"]['v_value']['value'],
-            data['data_sample_Sample_x'][key]["_cell_length_c"]['v_value']['value'],
+            get_value(_compo)*100,
+            get_value(data['data_sample_Sample_x'][key]["_cell_length_a"]),
+            get_value(data['data_sample_Sample_x'][key]["_cell_length_b"]),
+            get_value(data['data_sample_Sample_x'][key]["_cell_length_c"]),
             ))
         i += 1
                 

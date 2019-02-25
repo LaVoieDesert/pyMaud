@@ -59,7 +59,8 @@ def parse_custom_object(texte):
     texte = texte[1:]
     while len(texte) and not len(texte[0]): texte = texte[1:]
         
-    return _key, data, texte
+    #return _key, data, texte
+    return ligne0, data, texte
 
 def parse_subordinateobject(texte):
     ligne0 = texte[0]
@@ -88,7 +89,8 @@ def parse_subordinateobject(texte):
     texte = texte[1:]
     while len(texte) and not len(texte[0]): texte = texte[1:]
 
-    return key, data, texte
+    #return key, data, texte
+    return ligne0, data, texte
 
 
 def parse_value(texte):
@@ -140,12 +142,14 @@ def parse_maud(texte):
                 data[key] = value
             else:
                 print("error with line:\n  {}".format(texte[0]))
+                print("for information, next lines:\n{}".format(texte[:3]))
                 texte = []
     return data
 
 def maud_parser(fichier):
     f = open(fichier)
     raw_data = f.read()
+    raw_data = raw_data.replace('\r','')
     raw_data = raw_data.split('\n')
     data = parse_maud(raw_data)
     return data
