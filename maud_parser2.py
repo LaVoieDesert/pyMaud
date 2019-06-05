@@ -1,4 +1,4 @@
-from maud_parse_value import parse_single_maud_value
+from maud_parse_value2 import parse_single_maud_value
 import collections
 
 
